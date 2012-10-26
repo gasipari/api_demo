@@ -1,0 +1,57 @@
+<h1>Listing quotes</h1>
+
+<table>
+  <tr>
+    <th>Company name</th>
+    <th>Company description</th>
+    <th>Contact name</th>
+    <th>Contact email</th>
+    <th>Contact phone</th>
+    <th>Contact address</th>
+    <th>Contact city</th>
+    <th>Contact state</th>
+    <th>Contact zip</th>
+    <th>Contact country</th>
+    <th>Request for proposal</th>
+    <th>Branding</th>
+    <th>Content development</th>
+    <th>Logos identity</th>
+    <th>Print ad campaign</th>
+    <th>Direct mail campaign</th>
+    <th>Project budget</th>
+    <th>Project timeline</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @quotes.each do |quote| %>
+  <tr>
+    <td><%= quote.company_name %></td>
+    <td><%= quote.company_description %></td>
+    <td><%= quote.contact_name %></td>
+    <td><%= quote.contact_email %></td>
+    <td><%= quote.contact_phone %></td>
+    <td><%= quote.contact_address %></td>
+    <td><%= quote.contact_city %></td>
+    <td><%= quote.contact_state %></td>
+    <td><%= quote.contact_zip %></td>
+    <td><%= quote.contact_country %></td>
+    <td><%= quote.request_for_proposal %></td>
+    <td><%= quote.branding %></td>
+    <td><%= quote.content_development %></td>
+    <td><%= quote.logos_identity %></td>
+    <td><%= quote.print_ad_campaign %></td>
+    <td><%= quote.direct_mail_campaign %></td>
+    <td><%= quote.project_budget %></td>
+    <td><%= quote.project_timeline %></td>
+    <td><%= link_to 'Show', quote %></td>
+    <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
+    <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Quote', new_quote_path %>

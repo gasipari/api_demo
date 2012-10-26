@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  company_name: MyString
+  company_description: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  contact_address: MyString
+  contact_city: MyString
+  contact_state: MyString
+  contact_zip: 1
+  contact_country: MyString
+  request_for_proposal: false
+  branding: false
+  content_development: false
+  logos_identity: false
+  print_ad_campaign: false
+  direct_mail_campaign: false
+  project_budget: MyString
+  project_timeline: MyString
+
+two:
+  company_name: MyString
+  company_description: MyString
+  contact_name: MyString
+  contact_email: MyString
+  contact_phone: MyString
+  contact_address: MyString
+  contact_city: MyString
+  contact_state: MyString
+  contact_zip: 1
+  contact_country: MyString
+  request_for_proposal: false
+  branding: false
+  content_development: false
+  logos_identity: false
+  print_ad_campaign: false
+  direct_mail_campaign: false
+  project_budget: MyString
+  project_timeline: MyString

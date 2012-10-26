@@ -1,0 +1,89 @@
+<%= form_for(@quote) do |f| %>
+  <% if @quote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
+
+      <ul>
+      <% @quote.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :company_name %><br />
+    <%= f.text_field :company_name %>
+  </div>
+  <div class="field">
+    <%= f.label :company_description %><br />
+    <%= f.text_field :company_description %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_name %><br />
+    <%= f.text_field :contact_name %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_phone %><br />
+    <%= f.text_field :contact_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_address %><br />
+    <%= f.text_field :contact_address %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_city %><br />
+    <%= f.text_field :contact_city %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_state %><br />
+    <%= f.text_field :contact_state %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_zip %><br />
+    <%= f.number_field :contact_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_country %><br />
+    <%= f.text_field :contact_country %>
+  </div>
+  <div class="field">
+    <%= f.label :request_for_proposal %><br />
+    <%= f.check_box :request_for_proposal %>
+  </div>
+  <div class="field">
+    <%= f.label :branding %><br />
+    <%= f.check_box :branding %>
+  </div>
+  <div class="field">
+    <%= f.label :content_development %><br />
+    <%= f.check_box :content_development %>
+  </div>
+  <div class="field">
+    <%= f.label :logos_identity %><br />
+    <%= f.check_box :logos_identity %>
+  </div>
+  <div class="field">
+    <%= f.label :print_ad_campaign %><br />
+    <%= f.check_box :print_ad_campaign %>
+  </div>
+  <div class="field">
+    <%= f.label :direct_mail_campaign %><br />
+    <%= f.check_box :direct_mail_campaign %>
+  </div>
+  <div class="field">
+    <%= f.label :project_budget %><br />
+    <%= f.text_field :project_budget %>
+  </div>
+  <div class="field">
+    <%= f.label :project_timeline %><br />
+    <%= f.text_field :project_timeline %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
